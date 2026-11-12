@@ -1,0 +1,17 @@
+{
+  "title": "Earth Siege 2",
+  "repo": "sp00nznet/earthsiege2-recomp",
+  "accent": "#d08a2c",
+  "note": {
+    "windows": "Point it at a writable copy of your Earth Siege 2 CD (the folder holding DBSIM.EXE, VSHELL.EXE and VOL). The build takes a few minutes. Python and the Visual Studio Build Tools are installed if they are missing; the Build Tools are about 3 GB and add 15 to 30 minutes, and Windows asks for permission once."
+  },
+  "game": {
+    "name": "Earth Siege 2 (Windows 95, v1.0)",
+    "files": ["DBSIM.EXE", "VSHELL.EXE", "VOL/SIMVOL0.VOL"]
+  },
+  "sources": [{ "repo": "sp00nznet/pcrecomp", "ref": "pcrecomp-ingame", "dir": "pcrecomp" }],
+  "setup": {
+    "windows": ["cmd", "/c", "Setup.cmd", "-Yes", "-GameDir", "{game}"]
+  },
+  "play": "Earth Siege 2.*"
+}
