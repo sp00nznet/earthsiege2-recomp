@@ -1,0 +1,15 @@
+# The installer (recomp-launcher with launcher/launcher.json), Windows only.
+# Run by hand: this repo is private, so nothing runs on push (REPO_RULES 8).
+name: installer
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  installer:
+    uses: sp00nznet/recomp-launcher/.github/workflows/installer.yml@main
+    with:
+      name: ES2-Recomp-Installer

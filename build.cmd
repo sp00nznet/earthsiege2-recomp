@@ -5,8 +5,8 @@ rem 400-function chunk of the full lift (C1002 in pass 2).
 rem Needs Visual Studio 2022 (any edition, or the Build Tools) with the C++ x86 tools.
 setlocal
 set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
-for /f "usebackq delims=" %%i in (`"%VSWHERE%" -latest -products * -property installationPath`) do set "VS=%%i"
-if not defined VS (echo Visual Studio 2022 not found & exit /b 1)
+for /f "usebackq delims=" %%i in (`"%VSWHERE%" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VS=%%i"
+if not defined VS (echo Visual Studio with the C++ x86 tools not found & exit /b 1)
 call "%VS%\VC\Auxiliary\Build\vcvarsall.bat" amd64_x86 >nul || exit /b 1
 if not defined BUILD_DIR set "BUILD_DIR=build"
 if not defined BUILD_TYPE set "BUILD_TYPE=RelWithDebInfo"
