@@ -1,8 +1,8 @@
 # Bring-up notes
 
 What Earth Siege 2 needed, in the order it turned up. Everything here lives in
-this repository (`src/runtime/host.c`, `tools/catalog.py`); pcrecomp's
-`pcrecomp-ingame` branch was enough as it is.
+this repository (`src/runtime/host.c`, `tools/catalog.py`); pcrecomp
+(`main`) was enough as it is.
 
 ## The copy of the game
 

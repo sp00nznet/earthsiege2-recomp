@@ -8,7 +8,7 @@ and `DBSIM.EXE` (the sim). Each is lifted whole into its own 32-bit host,
 did. No emulator, no wrapper DLLs.
 
 Built on the [pcrecomp](https://github.com/sp00nznet/pcrecomp) toolchain, on
-its **`pcrecomp-ingame`** branch (not yet merged into `main`), following its
+its `main` branch, following its
 shared house style.
 
 ![Mission 1: piloting a HERC across the Alpha sector](docs/screenshots/in-mission.png)
@@ -30,8 +30,8 @@ machine into the gitignored `src/recomp/gen/`. Windows only for now.
 3. Play with the **`Earth Siege 2`** shortcut in that folder.
 
 The script asks before installing anything (Python, `pefile` and `capstone`,
-git, the Visual Studio 2022 Build Tools), clones pcrecomp's
-`pcrecomp-ingame` branch beside this folder, links your copy as `game`,
+git, the Visual Studio 2022 Build Tools), clones pcrecomp
+(`main`) beside this folder, links your copy as `game`,
 writes the two files the original installer did, then catalogs, lifts and
 builds both programs in about ten minutes; a rerun skips finished steps.
 Building by hand and the command line are in

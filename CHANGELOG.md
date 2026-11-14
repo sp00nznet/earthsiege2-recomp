@@ -5,6 +5,9 @@ versions follow [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Builds against pcrecomp main; the `pcrecomp-ingame` branch is merged.
+
 ### Added
 - `VSHELL.EXE` and `DBSIM.EXE` lifted whole (pcrecomp `disasm32` and
   `drive32`, no IDA) into two native32 hosts, `es2shell.exe` and

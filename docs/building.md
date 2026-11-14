@@ -10,15 +10,14 @@ Windows only (see [ROADMAP.md](../ROADMAP.md) for Linux and macOS).
   (`py -3 -m pip install pefile capstone`)
 - Visual Studio 2022 or its Build Tools, with *Desktop development with
   C++* (CMake and Ninja come with it)
-- git, and **pcrecomp on its `pcrecomp-ingame` branch**, cloned beside this
-  repository. Its `main` does not have the headless desktop, the module
-  loader, the guest registry, synthetic DirectInput or `drive32` this game
-  needs yet; `tools/setup.ps1` checks for each.
+- git, and **pcrecomp** (`main`), cloned beside this repository;
+  `tools/setup.ps1` checks it has the headless desktop, the module loader,
+  the guest registry, synthetic DirectInput and `drive32`.
 
 ## Steps
 
 ```
-git clone -b pcrecomp-ingame https://github.com/sp00nznet/pcrecomp
+git clone https://github.com/sp00nznet/pcrecomp
 git clone https://github.com/sp00nznet/earthsiege2-recomp
 cd earthsiege2-recomp
 mklink /J game D:\es2                  (a writable copy of your CD)

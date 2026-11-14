@@ -27,8 +27,7 @@ In order:
 5. **CD audio music** from the disc's audio tracks (a cue/bin reader behind
    MCI cdaudio).
 6. **Upstream** the two catalog seed scans (Borland method pointers at any
-   offset, unrolled span loops) into pcrecomp's `disasm32`, and the
-   `pcrecomp-ingame` work into pcrecomp `main`.
+   offset, unrolled span loops) into pcrecomp's `disasm32`.
 
 ## Deferred
 
